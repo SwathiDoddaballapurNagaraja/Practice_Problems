@@ -1,4 +1,11 @@
 class Candies {
+
+    public static void main(str[] args){
+        int [] candyType = [1,1,2,2,3,3];
+        int result = distributeCandies(candyType);
+        System.out.println(result);
+    }
+    
     public int distributeCandies(int[] candyType) {
         
         HashSet<Integer> unique = new HashSet<Integer>();
@@ -10,11 +17,5 @@ class Candies {
             
         }      
         return unique.size();
-    }
-
-    public static void main(str[] args){
-        int [] candyType = [1,1,2,2,3,3];
-        int result = distributeCandies(candyType);
-        System.out.println(result);
     }
 }
